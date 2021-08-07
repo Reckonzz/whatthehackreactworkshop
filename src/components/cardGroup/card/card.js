@@ -12,10 +12,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Card = (props) => { 
     return (
-        <div className="card"> 
-            <FontAwesomeIcon className="icon" icon = {props.icon}/>
-            <div className="card-title">{props.title}</div>
-            <div className="card-description">{props.description}</div>
+        <div className="card" style={props.theme === "light" ? {backgroundColor: "azure"} : {backgroundColor: "black"}}> 
+            <FontAwesomeIcon className="icon" icon = {props.icon} style={props.theme === "light" ? {color: "paleVioletRed"} : {color: "yellow"}}/>
+            <div className="card-title" style={props.theme === "light" ? {color: "black"} : {color: "white"}}>{props.title}</div>
+            <div className="card-description" style={props.theme === "light" ? {color: "black"} : {color: "white"}}>{props.description}</div>
         </div>
     )
 };

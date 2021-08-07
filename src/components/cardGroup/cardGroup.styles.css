@@ -1,7 +1,16 @@
+.card-group-container{
+    width: 1024px; 
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:flex-end;
+    align-items: flex-end;
+
+}
+
 .card-group{
     display: flex; 
-    flex: row nowrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
-    width: 1024px;
-    margin: auto;
+    margin-top: 20px;
 }

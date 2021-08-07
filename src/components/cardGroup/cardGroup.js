@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 // import your stylesheet (change the filename)
 import "./cardGroup.styles.css"
 import Card from "./card/card"
+import ToggleButton from "./toggleButton/toggleButton"
 
 import { faRobot, faLaptopCode, faBreadSlice } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 const CardGroup = () => { 
+    const [theme, setTheme] = useState("light") 
+
+    const toggleTheme = () => { 
+        if (theme === "light") {
+            setTheme("dark")
+        }else{
+            setTheme("light")
+        }
+    }
     let arr = [
         {    
             icon: faLaptopCode,
@@ -25,8 +35,11 @@ const CardGroup = () => {
         },
     ]
     return (
-        <div className="card-group"> 
-            {arr.map(card => <Card icon={card.icon} title={card.title} description={card.description}/>)}
+        <div className="card-group-container">
+            <ToggleButton handleClick={toggleTheme}/>
+            <div className="card-group"> 
+                {arr.map(card => <Card icon={card.icon} title={card.title} description={card.description} theme={theme}/>)}
+            </div>
         </div>
     )
 };
