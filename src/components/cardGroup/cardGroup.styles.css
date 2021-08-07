@@ -1,0 +1,7 @@
+.card-group{
+    display: flex; 
+    flex: row nowrap;
+    justify-content: space-between;
+    width: 1024px;
+    margin: auto;
+}
