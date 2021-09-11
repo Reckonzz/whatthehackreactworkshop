@@ -23,7 +23,7 @@ Setup won't be required as we will be going through mostly slide base, then proc
     1. Open your terminal (macOS) or command prompt (windows)
     2. cd to your desktop or any folder you prefer by using " cd ./desktop "
        - Run the following command:
-        - npx create-react-app 3dc-react-workshop    (This will take awhile)
+        - npx create-react-app reactWorkshop (This will take awhile)
           - This will create a templated react app under the name of "3dc-react-workshop" in your desktop folder.
 - ## Tailwind CSS
   - Set up tailwind using npm
