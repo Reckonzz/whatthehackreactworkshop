@@ -25,10 +25,46 @@ Setup won't be required as we will be going through mostly slide base, then proc
        - Run the following command:
         - npx create-react-app 3dc-react-workshop    (This will take awhile)
           - This will create a templated react app under the name of "3dc-react-workshop" in your desktop folder.
+- ## Tailwind CSS
+  - Set up tailwind using npm
+    - npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
+    - npm install @craco/craco
+    - In your project, go to package.json
+      - Edit the start, build and test scripts as such:
+      - "start": "craco start"
+      - "build": "craco build"
+      - "test": "craco test"
+    - Create craco.config.js file
+      - Add the following into the file:
+      ```js
+            module.exports = {
+        style: {
+          postcss: {
+            plugins: [
+              require('tailwindcss'),
+              require('autoprefixer'),
+            ],
+          },
+        },
+      }
+      ```
+    - Initiate tailwind
+      - npx tailwindcss-cli@latest init
+    - Add the following to your index.css file
+      ```css
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+      ```
 - ## Code Editor
   - Any code editor will work fine.
     - Demo will be using visual studio code
     - https://code.visualstudio.com/download
+
+# Lecture notes
+The following notes are for your own refresher and pre-readings before the actual workshop. They are optional and not compulsory.
+
+The actual workshop will be done based on the lecture notes [here](./wthreactworkshopnotes.pdf)
 
 # Lecture Notes
 ## Table of contents
