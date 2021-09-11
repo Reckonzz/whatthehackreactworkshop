@@ -61,7 +61,7 @@ Please ensure you have done this set up before the workshop
     - Demo will be using visual studio code
     - https://code.visualstudio.com/download
 
-# Lecture notes
+# Note
 The following notes are for your own refresher and pre-readings before the actual workshop. They are optional and not compulsory.
 
 The actual workshop will be done based on the lecture notes [here](./wthreactworkshopnotes.pdf)
