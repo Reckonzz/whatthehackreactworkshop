@@ -9,7 +9,7 @@ Basic knowledge on (Be it on python or what not) :
 - Loops
 
 # Set-up
-Setup won't be required as we will be going through mostly slide base, then proceed to a demo if time allows for it.
+Please ensure you have done this set up before the workshop
 - ## NodeJS 
   - https://nodejs.org/en/  (Windows and MacOS alike)
   - For homebrew users (macOS)
