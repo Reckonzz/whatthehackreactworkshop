@@ -26,14 +26,23 @@ Please ensure you have done this set up before the workshop
         - npx create-react-app reactWorkshop (This will take awhile)
           - This will create a templated react app under the name of "3dc-react-workshop" in your desktop folder.
 - ## Tailwind CSS
+  - For a more detailed set up guide, refer [here](https://tailwindcss.com/docs/guides/create-react-app)
   - Set up tailwind using npm
     - npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
     - npm install @craco/craco
     - In your project, go to package.json
       - Edit the start, build and test scripts as such:
-      - "start": "craco start"
-      - "build": "craco build"
-      - "test": "craco test"
+      ```js
+      {
+      "scripts": {
+            "start": "craco start",
+            "build": "craco build",
+            "test": "craco test",
+            "eject": "react-scripts eject"
+          },
+        }
+      ```
+      
     - Create craco.config.js file
       - Add the following into the file:
       ```js
@@ -50,12 +59,28 @@ Please ensure you have done this set up before the workshop
       ```
     - Initiate tailwind
       - npx tailwindcss-cli@latest init
+    
+    - Add a tailwind.config.js file and add the following into the file:
+      ```js
+        module.exports = {
+          purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+          darkMode: false, // or 'media' or 'class'
+          theme: {
+            extend: {},
+          },
+          variants: {
+            extend: {},
+          },
+          plugins: [],
+        }
+      ```
     - Add the following to your index.css file
       ```css
       @tailwind base;
       @tailwind components;
       @tailwind utilities;
       ```
+
 - ## Code Editor
   - Any code editor will work fine.
     - Demo will be using visual studio code
