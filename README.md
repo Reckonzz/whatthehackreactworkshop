@@ -18,14 +18,13 @@ Please ensure you have done this set up before the workshop
     - Open your terminal (macOS) or command prompt (windows)
     - Run: npm --version or node --version
     - npm version 6.14.8 or node version 14.12.0 respectively. (Any later version will work fine as well)
-- ## Create-React-App
+- ## Cloning the repo
   - Steps are as follows:
     1. Open your terminal (macOS) or command prompt (windows)
     2. cd to your desktop or any folder you prefer by using " cd ./desktop "
-       - Run the following command:
-        - npx create-react-app reactWorkshop (This will take awhile)
-          - This will create a templated react app under the name of "3dc-react-workshop" in your desktop folder.
-- ## Tailwind CSS
+       - Run the following command to get a copy of this repository:
+        - `git clone <git repo url>`
+- ## Configuring Tailwind CSS
   - For a more detailed set up guide, refer [here](https://tailwindcss.com/docs/guides/create-react-app)
   - Set up tailwind using npm
     - npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
