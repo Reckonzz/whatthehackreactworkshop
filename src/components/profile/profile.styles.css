@@ -1,0 +1,26 @@
+.profile-page{
+    padding: 50px; 
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px; 
+    margin:auto;
+}
+
+.profile-pic{
+    width: 500px;
+    border-radius: 20px;
+}
+
+.description{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+
+.description-title{
+    color: #C06C84;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
