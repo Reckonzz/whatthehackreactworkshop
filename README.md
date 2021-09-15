@@ -24,6 +24,9 @@ Please ensure you have done this set up before the workshop
     2. cd to your desktop or any folder you prefer by using " cd ./desktop "
        - Run the following command to get a copy of this repository:
         - `git clone <git repo url>`
+- ## Installing create react app
+ - Run the following command
+  - `npx create-react-app wth-react-workshop`
 - ## Configuring Tailwind CSS
   - For a more detailed set up guide, refer [here](https://tailwindcss.com/docs/guides/create-react-app)
   - Set up tailwind using npm
